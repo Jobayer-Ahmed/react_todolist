@@ -45,6 +45,7 @@ section {
 
 .todos {
 	padding: 15px 17px;
+	display: flex;
 }
 
 .todos_checkbox {
@@ -58,7 +59,7 @@ section {
 	margin-right: 15px;
 }
 .todos_checkbox label {
-	width: 341px;
+	width: 322px;
 	height: 30px;
 	position: absolute;
 	left: 4px;
@@ -178,4 +179,45 @@ section {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
     font-weight: 900;
+}
+
+.todos_details {
+    width: 278px;
+}
+
+.delete_todo {
+	position: relative;
+}
+
+.delete {
+	position: relative;
+	cursor: pointer;
+	height: 36px;
+	width: 25px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: transparent;
+}
+
+.block {
+	background-image: url("img/cancel.png");
+	height: 18px;
+	width: 18px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.delete:hover .block {
+	background-image: url("img/cancel_dark.png");
 }
