@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.header {
+	height: 118.761px;
+	text-align: center;
+	background-color: #0B0225;
+	color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12pt;
+}
+
+.today {
+	font-family: kilogram;
+	font-size: 33pt;
+	padding-top: 25px;
+}
+
+.new_header {
+	background-color: #FF2850;
+}
+
+@font-face {
+    font-family: kilogram;
+    src: url(../font/kilogram.otf);
+}

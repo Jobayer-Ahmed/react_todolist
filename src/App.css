@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.hide {
+	display: none;
+}
+
+body {
+	background-color: #F0EFE9;
+}
+
+body button, body button:hover, body button:focus, body button::-moz-focus-inner, body button:active {
+	outline: none;
+}
+
+.App {
+	width: 384px;
+	min-height: 640px;
+	background-color: #FF2850;
+	margin: auto;
+}
+
+section {
+	min-height: 423.6px;
+}
+
+.todos_checkbox {
+	float: left;
+}
+
+.project {
+	font-family: salsa;
+	font-size: 15pt;
+	color: #fff;
+}
+
+.task {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 10pt;
+}
+
+.todos {
+	padding: 15px 17px;
+}
+
+.todos_checkbox {
+	width: 28px;
+	height: 28px;
+	position: relative;
+	background: transparent;
+	border-radius: 50px;
+	border: 5px solid #0B0225;
+	margin-top: 2px;
+	margin-right: 15px;
+}
+.todos_checkbox label {
+	width: 341px;
+	height: 30px;
+	position: absolute;
+	left: 4px;
+	cursor: pointer;
+	border-radius: 50px;
+	top: 4px;
+}
+.todos_checkbox label:after {
+	content: '';
+	width: 9px;
+	height: 5px;
+	position: absolute;
+	top: 5px;
+	left: 4px;
+	border: 3px solid #0B0225;
+	border-top: none;
+	border-right: none;
+	background: transparent;
+	opacity: 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.todos_checkbox input[type=checkbox] {
+	visibility: hidden;
+}
+.todos_checkbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+.addTodos {
+	text-align: right;
+	height: 63px;
+	padding-bottom: 35px;
+}
+
+.addTodos button {
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	margin-top: 25px;
+	margin-right: 15px;
+	position: relative;
+	background-color: #0B0225;
+}
+
+.line_width {
+	background-color: #fff;
+	width: 20px;
+	height: 4px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.line_height {
+	background-color: #fff;
+	width: 4px;
+	height: 20px;
+	margin: auto;
+}
+
+@font-face {
+	font-family: salsa;
+	src: url(font/salsa.ttf);
+}
+
+.show {
+	display: block;
+	transition: 
+}
+
+.main_button {
+    margin-top: 262.996px;
+    text-align: center;
+}
+
+.main_button button {
+    width: 138.572px;
+    height: 41.600px;
+    color: white;
+    font-size: 20px;
+    border-radius: 3.501px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.save {
+	background-color: #FF2850;
+	margin-left: 18.7615px;
+}
+
+.cancel {
+	margin-right: 18.7615px;
+	background-color: transparent;
+}
+
+.todosadding {
+	background-color: #0B0225 !important;
+}
+
+.text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    color: #FF2850;
+    margin-top: 51.681px;
+    margin-left: 34.163px;
+}
+
+.inputTodos input {
+    margin-left: 35px;
+    background-color: transparent;
+    margin-top: 5px;
+    border-bottom: 2.5px solid #1d113e;
+    width: 313px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
